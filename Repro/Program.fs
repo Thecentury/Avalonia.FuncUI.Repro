@@ -21,7 +21,7 @@ type Msg =
 module Core =
     let init = WithStyle
     
-    let view2 model dispatch =
+    let view model dispatch =
         let styles =
             let styles = Styles()
             
@@ -42,18 +42,18 @@ module Core =
                         Button.onClick (fun _ -> Switch |> dispatch)
                     ]
                 ]
-            ] |> generalize
+            ]
         | WithoutStyle ->
             StackPanel.create [
-                StackPanel.styles (Styles())
+//                StackPanel.styles (Styles())
                 StackPanel.children [
                     Button.create [
-                        Button.classes []
+//                        Button.classes []
                         Button.content "Add style"
                         Button.onClick (fun _ -> Switch |> dispatch)
                     ]
                 ]
-            ] |> generalize
+            ]
             
     let update _msg model =
         match model with
@@ -71,7 +71,7 @@ type MainWindow() as this =
         
         let state = fun () -> Core.init, Cmd.none
         
-        Elmish.Program.mkProgram state Core.update Core.view2
+        Elmish.Program.mkProgram state Core.update Core.view
         |> Program.withHost this
         |> Program.run
         
