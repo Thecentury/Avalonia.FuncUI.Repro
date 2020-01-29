@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Repro", "Repro\Repro.fsproj", "{5FEDACA5-3DEB-42CE-B18F-C602F9855F74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FEDACA5-3DEB-42CE-B18F-C602F9855F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FEDACA5-3DEB-42CE-B18F-C602F9855F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FEDACA5-3DEB-42CE-B18F-C602F9855F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FEDACA5-3DEB-42CE-B18F-C602F9855F74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
